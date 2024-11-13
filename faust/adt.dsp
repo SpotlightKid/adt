@@ -41,7 +41,8 @@ with {
 
 adt4x = _ <: par(i, NVOICES, channel(i, pan_spread, delay_spread, pitch_spread)) :> /(NVOICES), /(NVOICES)
 with {
-    pan_spread = hslider("[1] Pan Spread", 100, 0, 100, 1) / 200 : si.smoo;
+    // unit should be "pc", but DPF doesn't handle that correctly
+    pan_spread = hslider("[1] Pan Spread [unit:%]", 100, 0, 100, 1) / 200 : si.smoo;
     delay_spread = hslider("[2] Delay Spread [unit:ms]", 40, 0, 100, 1);
     pitch_spread = hslider("[3] Pitch Spread [unit:ct]", 40, 0, 150, 1);
 };

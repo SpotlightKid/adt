@@ -190,7 +190,7 @@ class mydsp : public dsp {
 		m->declare("basics.lib/name", "Faust Basic Element Library");
 		m->declare("basics.lib/tabulateNd", "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>");
 		m->declare("basics.lib/version", "1.19.1");
-		m->declare("compile_options", "-a /home/chris/tmp/tmplx71i2rq.cpp -lang cpp -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 0");
+		m->declare("compile_options", "-a /home/chris/tmp/tmpel522spj.cpp -lang cpp -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 0");
 		m->declare("delays.lib/name", "Faust Delay Library");
 		m->declare("delays.lib/version", "1.1.0");
 		m->declare("description", "Automatic double tracking (not only) for vocals");
@@ -390,6 +390,7 @@ class mydsp : public dsp {
 	FAUSTPP_VIRTUAL void buildUserInterface(UI* ui_interface) {
 		ui_interface->openVerticalBox("ADT");
 		ui_interface->declare(&fHslider4, "1", "");
+		ui_interface->declare(&fHslider4, "unit", "%");
 		ui_interface->addHorizontalSlider("Pan Spread", &fHslider4, FAUSTFLOAT(1e+02f), FAUSTFLOAT(0.0f), FAUSTFLOAT(1e+02f), FAUSTFLOAT(1.0f));
 		ui_interface->declare(&fHslider3, "2", "");
 		ui_interface->declare(&fHslider3, "unit", "ms");
@@ -718,7 +719,7 @@ const char *ADT::parameter_unit(unsigned index) noexcept
     switch (index) {
     
     case 0:
-        return "";
+        return "%";
     
     case 1:
         return "ms";
