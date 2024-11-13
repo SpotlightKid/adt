@@ -12,7 +12,7 @@ stereo ouput.
 This effect can be used to thicken up lead or background vocals or other
 signals that need more presence in the mix.
 
-It can be used as either and insert effect or as a send efefct in an
+It can be used as either an insert effect or as a send efefct in an
 auxilliary bus by providing separate dry and wet signal gain parameters.
 
 <p align="center"><img title="Generic LV2 UI in Ardour 8" src="screenshot-ardour8.png" width="373"></center>
