@@ -37,7 +37,7 @@
 // See https://lv2plug.in/book/#_manifest_ttl_in
 #define DISTRHO_PLUGIN_URI   "https://chrisarndt.de/plugins/adt"
 // The plugin id when exporting in CLAP format, should be in reverse URI form
-#define DISTRHO_PLUGIN_CLAP_ID "chrisarndt.de.adt"
+#define DISTRHO_PLUGIN_CLAP_ID "de.chrisarndt.adt"
 
 #define DISTRHO_PLUGIN_HAS_UI        0
 #define DISTRHO_UI_USE_NANOVG        0
