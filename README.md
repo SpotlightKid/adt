@@ -1,6 +1,21 @@
 # Automatic Double Tracking
 
-Automatic double tracking (not only) for vocals
+[Automatic double tracking] (not only) for vocals.
+
+This plugin copies the input four times and pans the copies alternatively
+left and right by a set amount, delays each by up to 100 ms and also
+pitch-shifts each copy by up to 150 cents. The maximum pan, delay and
+pitch-shift spread can be independently controlled by parameters as well
+as the cutoff frequencies of a low- and high-pass filter applied to the
+stereo ouput.
+
+This effect can be used to thicken up lead or background vocals or other
+signals that need more presence in the mix.
+
+It can be used as either and insert effect or as a send efefct in an
+auxilliary bus by providing separate dry and wet signal gain parameters.
+
+<p align="center"><img title="Generic LV2 UI in Ardour 8" src="screenshot-ardour8.png" width="373"></center>
 
 
 ## Formats
@@ -125,6 +140,7 @@ The project is built using the DISTRHO Plugin Framework ([DPF]) and was created
 from the [dpf-faust-project-template] using [copier].
 
 
+[automatic double tracking]: https://en.wikipedia.org/wiki/Automatic_double_tracking
 [clap]: https://cleveraudio.org/
 [dpf-faust-project-template]: https://github.com/SpotlightKid/dpf-faust-project-template
 [copier]: https://copier.readthedocs.io/en/stable/
