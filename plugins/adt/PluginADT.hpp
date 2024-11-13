@@ -129,14 +129,22 @@ struct Preset {
 };
 
 const Preset factoryPresets[] = {
+    //,{
+    //    "Preset name",   // preset name
+    //    {0.0f, ...}      // array of ADT::NumParameters float param values
+    //}
     {
         "Default",
-        {-6.0f,}
+        {
+            100.0f,     // p_Pan_Spread
+            40.0f,      // p_Delay_Spread
+            40.f,       // p_Pitch_Spread
+            3500.0f,    // p_Lowpass
+            20.0f,      // p_Highpass
+            -3.0f,      // p_Dry
+            -4.0f       // p_Wet
+        }
     }
-    //,{
-    //    "Another preset",  // preset name
-    //    {-14.0f, ...}      // array of ADT::NumParameters float param values
-    //}
 };
 
 const uint presetCount = sizeof(factoryPresets) / sizeof(Preset);
