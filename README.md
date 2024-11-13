@@ -79,7 +79,9 @@ dedicated makefile variable.
 * VST2: `VST2_DIR` (`<prefix>/lib/vst`)
 * VST3: `VST3_DIR` (`<prefix>/lib/vst3`)
 
-Example: `make DESTDIR=/tmp/build-root VST2_DIR=/usr/lib/lxvst install`
+Example:
+
+    make DESTDIR=/tmp/build-root BUILD_VST2=true VST2_DIR=/usr/lib/lxvst install
 
 To install the plugins only for your current user account, run
 `make install-user`.
