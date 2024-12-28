@@ -12,7 +12,7 @@ stereo ouput.
 This effect can be used to thicken up lead or background vocals or other
 signals that need more presence in the mix.
 
-It can be used as either an insert effect or as a send efefct in an
+It can be used as either an insert effect or as a send effect in an
 auxilliary bus by providing separate dry and wet signal gain parameters.
 
 <p align="center"><img title="Generic LV2 UI in Ardour 8" src="screenshot-ardour8.png" width="373"></center>
@@ -22,7 +22,7 @@ auxilliary bus by providing separate dry and wet signal gain parameters.
 
 This plugin is available in the following plug-in formats by default:
 
-* [CLAP] (`chrisarndt.de.adt`)
+* [CLAP] (`de.chrisarndt.adt`)
 * [LV2] (`https://chrisarndt.de/plugins/adt`)
 * [VST3][vst] (`adt.vst3`)
 
@@ -111,7 +111,7 @@ variables differ depending on the target OS.*
 
 * [pkgconf]
 
-* The [faustpp] pre-processor and [FAUST] (optional)
+* The [faustpp] post-processor and [FAUST] (optional)
 
 The [CLAP], [LV2], [LADSPA], [VST2][vst] (Xaymar VST2SDK) and [VST3][vst]
 headers are included in the [DPF] framework, which is integrated as a Git
@@ -136,7 +136,7 @@ This plugin is released under the *MIT* license. Please see the
 ## Acknowledgements
 
 The DSP code is generated from the FAUST sources via the [faustpp]
-pre-processor.
+post-processor.
 
 The project is built using the DISTRHO Plugin Framework ([DPF]) and was created
 from the [dpf-faust-project-template] using [copier].
@@ -148,7 +148,7 @@ from the [dpf-faust-project-template] using [copier].
 [copier]: https://copier.readthedocs.io/en/stable/
 [dpf]: https://github.com/DISTRHO/DPF
 [faust]: https://faust.grame.fr/
-[faustpp]: https://github.com/jpcima/faustpp.git
+[faustpp]: https://github.com/jpcima/faustpp
 [ladspa]: https://www.ladspa.org/
 [lv2]: https://lv2plug.in/
 [pkgconf]: https://github.com/pkgconf/pkgconf
